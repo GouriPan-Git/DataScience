@@ -93,11 +93,87 @@ float(False)  #0.0
 
 160//60  # 2 hours
 
+# String Operations
+
+Name = "Michael Jackson"
+print(Name[-1])
+print(Name[0])
+
+print(Name[0:4])
+print(Name[8:12])
+print(Name[::2])
+print(Name[0:5:2])
+
+statement = Name + "is the best"
+
+print(3*Name)
+
+# New line escape sequence
+
+print(" Michael Jackson \n is the best" )
+
+# Tab escape sequence
+
+print(" Michael Jackson \t is the best" )
 
 
+# Include back slash in string
+
+print(" Michael Jackson \\ is the best" )
+
+# r will tell python that string will be display as raw string
+
+print(r" Michael Jackson \ is the best" )
+
+# String Method 
+
+a = "This string will be moved to upper"
+print("before upper method :" + a)
+b=a.upper()
+print("after the upper method :" + b)
+
+b=a.replace("moved to","replaced by")
+print(b)
 
 
+a.find("fore")
+a.find("move")
+b.find("repl")   #Find is case sensitive
 
+a = "1"
+print(a)
+
+b = "2"
+print(b)
+
+print(a+b)
+
+#Use a stride value of 2 to print out every second character of the string e
+e = 'clocrkr1e1c1t'
+print(e[::2])
+
+r="This is the \\ backslash print"
+print(r)
+
+
+# Write your code below and convert to upper
+
+f = "You are wrong"
+
+print(f.upper())
+
+
+# Write your code below Consider the variable g, and find the first index of the sub-string snow:
+
+g = "Mary had a little lamb Little lamb, little lamb Mary had a little lamb \
+Its fleece was white as snow And everywhere that Mary went Mary went, Mary went \
+Everywhere that Mary went The lamb was sure to go"
+
+g.find("snow")
+
+# In the variable g, replace the sub-string Mary with Bob:
+
+g.replace("Mary", "Bob")
 
 
 
